@@ -24,10 +24,13 @@ form.addEventListener('submit',function(e) {
     //verificar se o formulário é valido
     formEvalido = validaNome(nomeBeneficiario.value)
     if(formEvalido) {
+
         //cria uma variável para exibir a mensagem de sucesso em um parágrafo
         const containerMensagemSucesso = document.querySelector('.success-message')
+
         //escreve  a mensagem de sucesso no parágrafo
         containerMensagemSucesso.innerHTML = mensagemSucesso
+
         //altera o estilo do parágrafo para display block já que ele está no documento css como none
         containerMensagemSucesso.style.display = 'block'
 
@@ -42,8 +45,8 @@ form.addEventListener('submit',function(e) {
     }
 })
 
-//colocando evento de mudança de campo
-nomeBeneficiario.addEventListener('keyup', function(e) {
+    //colocando evento de mudança de campo
+    nomeBeneficiario.addEventListener('keyup', function(e) {
     console.log(e.target.value)
     formEvalido = validaNome(e.target.value)
 
