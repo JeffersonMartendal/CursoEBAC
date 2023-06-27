@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -82,9 +83,9 @@ section h2 {
 }
 
 .lista-veiculos li {
-        list-style: none;
-        max-width: 30%;
-        margin-bottom: 24px;
+    list-style: none;
+    max-width: 30%;
+    margin-bottom: 24px;
 }
 
 .lista-veiculos li img {
@@ -115,7 +116,12 @@ section h2 {
     border-radius: 6px;
 }
 
-.lista-veiculos li strong {
+.price {
     margin: 16px 0;
     display: block;
+}
+
+.price del {
+    color: #ccc;
+    font-size: 14px;
 }
