@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li {
+            width: 100%;
+            list-style-type: none;
+        }
+
+        li img {
+            width: 100%;
+        }
+
+        @media screen and (min-width: 1366px) {
+            li {
+            max-width: 33%;
+            float: left;
+            }
+        }
+
+        @media screen and (orientation: portrait) and (max-width: 640px) {
+            body {
+                background-color: red;
+            }
+        }
+
+        @media print {
+            h3 {
+                color: red
+            }
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>
+            <img src="https://images.tcdn.com.br/img/img_prod/1020145/tenis_converse_chuck_taylor_all_star_cano_alto_verde_8313_1_c66e62cfbccfc64ff3e4edfb829e197d.jpg" alt="">
+            <h3>Tênis All Star cor verde</h3>
+        </li>
+        <li>
+            <img src="https://images.tcdn.com.br/img/img_prod/1020145/tenis_converse_chuck_taylor_all_star_cano_alto_verde_8313_1_c66e62cfbccfc64ff3e4edfb829e197d.jpg" alt="">
+            <h3>Tênis All Star cor verde</h3>
+        </li>
+        <li>
+            <img src="https://images.tcdn.com.br/img/img_prod/1020145/tenis_converse_chuck_taylor_all_star_cano_alto_verde_8313_1_c66e62cfbccfc64ff3e4edfb829e197d.jpg" alt="">
+            <h3>Tênis All Star cor verde</h3>
+        </li>
+    </ul>
+</body>
+</html>
