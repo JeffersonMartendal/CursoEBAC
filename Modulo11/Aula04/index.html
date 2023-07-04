@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            background-image: url(https://cdn.pixabay.com/photo/2019/02/19/13/40/horse-4006848_1280.jpg);
+            height: 500px;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-color: red;
+            background-size: contain;
+        }
+    </style>
+</head>
+<body>
+    <picture>
+        <source media="(max-width: 1024px)" srcset="https://cdn.pixabay.com/photo/2023/06/24/09/17/iguana-8084900_1280.jpg" />
+        <source media="(min-width: 1280px)" srcset="https://cdn.pixabay.com/photo/2023/06/26/13/41/wolf-8089783_1280.jpg" />
+        <img src="https://cdn.pixabay.com/photo/2019/02/19/13/40/horse-4006848_1280.jpg" alt="" />
+    </picture>
+    <div></div>
+</body>
+</html>
