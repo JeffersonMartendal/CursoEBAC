@@ -11,10 +11,6 @@ body {
     color: #383838;
 }
 
-#nav-link {
-    position: relative;
-}
-
 #cabecalho .nav .nav-link,
 .navbar-brand,
 .navbar-brand:hover,
