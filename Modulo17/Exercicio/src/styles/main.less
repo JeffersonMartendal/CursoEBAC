@@ -1,44 +1,34 @@
 @import "variaveis.less";
 @import "maps.less";
 
-//escapings
 @breakpointMobile: ~"(max-width: 767px)";
 @breakpointTablet: ~"(max-width: 1023px)";
 
-//mixin
 .width100 {
     width: 100%;
 }
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Roboto, sans-serif;
 }
-
 body {
     background-color: @corDeFundo;
-    //usando mapas
-    //background-color:  #color[backgroundColor];
 }
     li {
         list-style: none;
     }
-
     & .container {
         max-width: 1024px;
-        //usando mixin
         .width100();
         margin: 0 auto;
     }
-
     header {
         background-color: @corDeFundoHeader;
         position: sticky;
         top: 0;
         left: 0;
-
         & .container {
             display: flex;
             justify-content: space-between;
@@ -46,10 +36,8 @@ body {
             padding: 16px 0;
         }
     }
-
     .menu {
         display: flex;
-
         & li {
             font-weight: bold;
             margin-left: 24px;
@@ -59,11 +47,9 @@ body {
             }
         }
     }
-
     section {
         padding: 56px 0;
     }
-
     .products {
         margin-top: 40px;
         display: grid;
@@ -72,13 +58,11 @@ body {
         row-gap: 4%;
         .width100();
     }
-
     .product {
         &-item img {
             .width100();
             border-radius: 16px;
         }
-
         &-button {
             display: block;
             background-color: #colorButton[buttonAntes];
@@ -88,32 +72,24 @@ body {
             border-radius: 8px;
             margin-top: 8px;
             text-decoration: none;
-
             &:hover {
                 background-color: #colorButton[buttonDepois];
             }
         }
     }
-    
-
-    //Tablet primeiro depois mobile
     @media @breakpointTablet {
         .container {
             max-width: 80%;
         }
-
         .products {
             grid-template-columns: repeat(2, 48.5%);
             column-gap: 3%;
         }
     }
-    
-    //usando escapings
     @media @breakpointMobile {
         .products {
             display: block;
         }
-
         .product-item {
             margin-bottom: 32px;
         }
