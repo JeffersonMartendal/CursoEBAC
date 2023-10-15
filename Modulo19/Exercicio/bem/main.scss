@@ -12,24 +12,28 @@
     grid-template-columns: 33% 33% 33%;
     grid-column-gap: 1%;
 }
+.produto {
+    &-imagem {
+        width: 100%;
+    }
 
-.produto {} /* bloco */
+    &-nome {
+        font-size: 1.2em;
+        margin: 8px 0;
+    }
 
-.produto-imagem { /* elemento */
-    width: 100%;
+    &-descricao {
+        color: gray;
+    }
 }
 
-.produto-nome { /* elemento */
-    font-size: 1.2em;
-    margin: 8px 0;
-}
-
-.produto-descricao { /* elemento */
-    color: gray;
-}
-
-.em-destaque { /* modificador */
+.em-destaque {
     border: 2px solid gold;
     padding: 8px;
     background-color: #ffff42;
 }
+
+
+
+
+
